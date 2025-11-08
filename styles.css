@@ -1,0 +1,263 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main, footer {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: rgba(5, 7, 15, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navigation {
+    display: none;
+}
+
+nav a {
+    display: flex;
+    font-weight: 700;
+    font-family: 'Verdana', monospace;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: rgb(137, 137, 172);
+    padding: 0.5rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+
+    transition: background-color 0.5s ease,
+                color 0.5s ease,
+                border-radius 0.5s ease;
+}
+
+nav a:hover, nav a:hover i {
+    color: rgb(208, 208, 211);
+    background-color: rgb(16, 21, 50);
+    border-radius: var(--border-radius-small);
+}
+
+nav i {
+    font-size: 1.3rem;
+}
+
+main, section {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 4rem;
+    padding-top: 7rem;
+}
+
+section {
+    gap: 0.3rem;
+    scroll-margin-top: 6rem;
+}
+
+.links-container a {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    color: rgb(170, 169, 193);
+    letter-spacing: 0.03rem;
+
+    transition: background-color 0.5s ease,
+                color 0.5s ease,
+                border-radius 0.5s ease;
+}
+
+.links-container a:hover {
+    color: rgb(208, 208, 211);
+    background-color: rgb(16, 21, 50);
+    border-radius: var(--border-radius-small);
+}
+
+.intro-header p {
+    padding-top: 0.25rem;
+}
+
+.intro-description {
+    max-width: 500px;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.link-arrow {
+    color: var(--color-link);
+    transform: rotate(-45deg);
+    color: rgb(137, 137, 172);
+}
+
+.game-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.game-div h3 {
+    display: flex;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.score-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+
+.result-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+
+.game-buttons {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.game-buttons button {
+    flex: 1;
+    max-width: 175px;
+}
+
+.reset-button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+}
+
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.project-links a, i{
+    color: rgb(106, 121, 207);
+    text-decoration: none;
+
+    transition: color 0.5s ease,
+                text-decoration 0.5s ease;
+}
+
+.project-links a:hover, .project-links a:hover i{
+    color: rgb(72, 84, 156);
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.25rem 0;
+}
+
+.tech-list div {
+    font-weight: 600;
+    color: rgb(137, 137, 172);
+    background-color: rgb(16, 21, 50);
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small);
+}
+
+.tech-list p {
+    font-size: 0.8rem;
+}
+
+.education-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.education-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.desc {
+    color: rgb(170, 169, 193);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(137, 137, 172);
+
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: rgb(208, 208, 211);
+}
+
+@media (min-width: 700px) {
+    .project-card {
+        flex-direction: row;
+    }
+
+    .project-card .img-div {
+        max-width: 30%;
+    }
+
+    .navigation {
+        display: flex;
+    }
+}

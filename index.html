@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="fanta.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="\">Carlo G</a>
+        </nav>
+        <nav class="navigation">
+            <a href="#intro">ABOUT</a>  
+            <a href="#skills">SKILLS</a>  
+            <a href="#projects">PROJECTS</a>
+            <a href="#education">EDUCATION</a>
+        </nav>
+        <nav>
+            <a target="_blank" href="https://github.com/carlog1566"><i class="fa-brands fa-square-github"></i></a>
+            <a target="_blank" href="https://linkedin.com/in/carlogabarda"><i class="fa-brands fa-linkedin"></i></a>    
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="intro-header">
+                <h1>Hello! I'm Carlo...</h1>
+                <p>Aspiring Software Engineer (AI Focus)</p>
+            </div>
+            <h5 class="intro-description">
+                An aspiring Software Engineer at Cal Poly Pomona, creating software that makes everyday technology 
+                smarter with AI. Based in LA County, I love going to the gym, video games, playing
+                music, and exploring new coding projects!
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid fa-arrow-right link-arrow"></i>
+                <a target="_blank" href="mailto:carlogabarda06@gmail.com">Email me</a>
+                <a target="_blank" href="https://linkedin.com/in/carlogabarda">LinkedIn</i></a>        
+                <a target="_blank" href="https://github.com/carlog1566">GitHub</i></a>
+            </div>
+            <div id="play-game">
+                <button onclick="start()">Play Game?</button>
+            </div>
+            <div class="game-div" style="display: none">
+                <h3>AI Rock Paper Scissors</h3>
+                <div class="score-text">
+                    <p><strong>Score</strong></p>
+                    <p id="score-count">You: 0 | AI: 0</p>
+                </div>
+                <div class="result-text">
+                    <p><strong>Result</strong></p>
+                    <p id="result">Nothing so far...</p>
+                </div>
+                <div class="game-buttons">
+                    <button onclick="play('rock')">🪨 Rock 🪨</button>
+                    <button onclick="play('paper')">📄 Paper 📄</button>
+                    <button onclick="play('scissors')">✂️ Scissors ✂️</button>
+                </div>
+                <button class='reset-button' onclick="reset()">🔄 Reset 🔄</button>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Machine Learning</td>
+                        <td>Scikit-learn | Keras | YOLO | PyTorch | Tensorflow</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Pandas | Numpy | PyGame | Data Analysis | Data Visualization</td>
+                    </tr>
+                    <tr>
+                        <td>Robotics</td>
+                        <td>ROS2 | PX4 | Gazebo | MAVROS</td>
+                    </tr>
+                    <tr>
+                        <td>Frontend</td>
+                        <td>HTML | CSS | Tailwind CSS | FantaCSS | React | JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Backend</td>
+                        <td>Django | NodeJS | MySQL</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>September 2025 - October 2025</p>
+                        <h4>Snake AI</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>PyTorch</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>PyGame</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Numpy</p>
+                            </div>
+                        </div>
+                        <p>Snake AI is a reinforcement learning project that trains an AI agent to play the classic Snake game.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/carlog1566/Snake-AI">View on GitHub <i class="fa-solid fa-file-lines"></i></a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                            <img class="big-img" src="public/SnakeAI.png" alt="Snake AI Image"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div>
+                        <p>Expected Graduation: May 2027 | Pomona, CA</p>
+                        <h4>California State Polytechnic University, Pomona</h4>
+                        <p>Bachelor of Science in Computer Science, Minor in Data Science</p>
+                        <p class="desc"><em>GPA: 3.96 | Honors: Dean's List (2 Semesters), President's List (1 Year)</em></p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div>
+                        <p>August 2020 - May 2024 | Lancaster, CA</p>
+                        <h4>Antelope Valley College</h4>
+                        <p>Associate of Arts, Liberal Arts and Sciences: Math and Science</p>
+                        <p>Associate of Arts, Liberal Arts and Sciences: Arts and Humanities</p>
+                        <p class="desc"><em>GPA: 4.00 | Honors: Summa Cum Laude</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="">Carlo Gabarda</a>, repo on <a target="_blank" href="">GitHub</a></p>
+    </footer>
+    <script>
+        const gameDiv = document.querySelector('.game-div');
+        const playBtn = document.getElementById('play-game');
+        const EPSILON = 0.40;
+        const DECAY = 0.95;
+        let playerScore = 0;
+        let aiScore = 0;
+        let outcome;
+
+        let weightedCounts = {rock: 0, paper: 0, scissors: 0};
+
+        function start() {
+            gameDiv.style.display = 'block';
+            playBtn.style.display = 'none'
+
+        }
+
+        function play(playerMove) {
+            updateWeights(playerMove);
+
+            let predicted = predictNextMove();
+            let aiMove = counterMove(predicted);
+
+            outcome = determineWinner(playerMove, aiMove);
+
+            if (outcome === 'You win!') playerScore += 1;
+            else if (outcome === 'AI wins!') aiScore += 1;
+
+            document.getElementById('score-count').innerText = `You: ${playerScore} | AI: ${aiScore}`;
+            document.getElementById('result').innerText = `You chose ${playerMove}, AI chose ${aiMove}. ${outcome}`
+        }
+
+        function updateWeights(latestMove) {
+            weightedCounts.rock *= DECAY;
+            weightedCounts.paper *= DECAY;
+            weightedCounts.scissors *= DECAY;
+            weightedCounts[latestMove] += 1
+        }
+
+        function predictNextMove() {
+            if (Math.random() < EPSILON) return randomMove();
+
+            const keys = Object.keys(weightedCounts);
+            let maxVal = -1;
+            let choices = [];
+            for (const k of keys) {
+                const value = weightedCounts[k];
+                if (value > maxVal) {
+                    maxVal = value;
+                    choices = [k];
+                } else if (value === maxVal) {
+                    choices.push(k);
+                }
+            }
+            return choices[Math.floor(Math.random() * choices.length)];
+        }
+
+        function randomMove() {
+            const moves = ['rock', 'paper', 'scissors'];
+            return moves[Math.floor(Math.random() * moves.length)];
+        }
+
+        function counterMove(predictedMove) {
+            if (predictedMove === 'rock') return 'paper';
+            if (predictedMove === 'paper') return 'scissors';
+            return 'rock';
+        }
+
+        function determineWinner(player, ai) {
+            if (player === ai) return "It's a draw!";
+            else if ((player === 'rock' && ai === 'scissors') || (player === 'paper' && ai === 'rock') || (player === 'scissors' && ai === 'paper')) return 'You win!';
+            return 'AI wins!';
+        }
+
+        function reset() {
+            playerScore = 0;
+            aiScore = 0;
+
+            weightedCounts = {rock: 0, paper: 0, scissors: 0};
+            gameDiv.style.display = 'none';
+            playBtn.style.display = 'block';
+            document.getElementById('result').innerText = 'Nothing so far...';
+            document.getElementById('score-count').innerText = 'You: 0 | AI: 0';
+        }
+    </script>
+</body>
+</html>
