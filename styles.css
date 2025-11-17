@@ -233,6 +233,22 @@ section {
     gap: 1rem;
 }
 
+.competition-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.competition-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.competition-card h4, .education-card h4 {
+    padding-bottom: 0.2rem;
+}
+
 .desc {
     color: rgb(170, 169, 193);
 }
@@ -248,7 +264,7 @@ footer a:hover {
     color: rgb(208, 208, 211);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 875px) {
     .project-card {
         flex-direction: row;
     }
