@@ -170,7 +170,7 @@ section {
     max-width: 450px;
 }
 
-.cards-grid {
+.project-grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -249,6 +249,12 @@ section {
     padding-bottom: 0.2rem;
 }
 
+.certification-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .desc {
     color: rgb(170, 169, 193);
 }
@@ -264,12 +270,12 @@ footer a:hover {
     color: rgb(208, 208, 211);
 }
 
-@media (min-width: 875px) {
-    .project-card {
+@media (min-width: 1050px) {
+    .project-card, .certification-card {
         flex-direction: row;
     }
 
-    .project-card .img-div {
+    .img-div {
         max-width: 30%;
     }
 
