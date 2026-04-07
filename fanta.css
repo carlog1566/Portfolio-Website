@@ -411,11 +411,6 @@ tfoot {
     border-top: 1px solid black;
 }
 
-table tr:hover td,
-tbody tr:nth-child(even):hover td {
-    background-color: var(--background-muted);
-}
-
 /* Form elements */
 input,
 button,
@@ -653,12 +648,6 @@ details[open] summary {
 .card-button-secondary {
     color: var(--color-link);
     background: var(--color-link-transparent);
-}
-
-.card-button-primary:hover,
-.card-button-secondary:hover {
-    transform: none;
-    opacity: 0.6;
 }
 
 
