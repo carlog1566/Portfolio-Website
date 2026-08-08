@@ -261,8 +261,7 @@ hr {}
 
 ul,
 ol {
-    list-style-position: inside;
-    padding-left: 1rem;
+    padding-left: 1.25rem;
 }
 
 li {

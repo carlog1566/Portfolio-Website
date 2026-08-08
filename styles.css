@@ -170,6 +170,27 @@ section {
     max-width: 450px;
 }
 
+.experience-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.experience-links a {
+    color: rgb(106, 121, 207);
+    text-decoration: none;
+
+    transition: color 0.5s ease,
+                text-decoration 0.5s ease;
+}
+
+.experience-links a:hover {
+    color: rgb(72, 84, 156);
+}
+
+
 .project-grid {
     display: flex;
     flex-direction: column;
@@ -272,7 +293,7 @@ footer a:hover {
     color: rgb(208, 208, 211);
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1175px) {
     .project-card, .certification-card {
         flex-direction: row;
     }
